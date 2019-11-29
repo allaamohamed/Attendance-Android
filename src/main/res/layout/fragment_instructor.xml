@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCTOR LIST"
+        android:id="@+id/namee"
+        android:textColor="#6b5b4d"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:layout_below="@id/namee"
+        android:id="@+id/table"
+        >
+    <TableRow>
+        <TextView
+            android:id="@+id/idh"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:text="ID"
+         />
+
+        <TextView
+            android:id="@+id/nameh"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+
+            android:text="NAME"
+            android:layout_toRightOf="@+id/id"/>
+
+        <TextView
+            android:id="@+id/courseidh"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+
+            android:text="COURSE"
+
+            android:layout_toRightOf="@+id/name" />
+
+        <Button
+            android:id="@+id/editbtnh"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+
+            android:layout_toRightOf="@+id/courseid"
+
+            />
+
+        <Button
+            android:id="@+id/deletebtnh"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/editbtn"
+            />
+    </TableRow>
+    </TableLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table"
+            android:id="@+id/recyclerv_view"
+            android:orientation="vertical"
+            />
+
+
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerv_view"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="21dp"
+        android:text="ADD"
+        android:textColor="#ffffff"
+        android:background="#4d536b"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_btn"
+        android:layout_marginTop="20dp"
+        android:id="@+id/save_btn"
+        android:layout_marginLeft="160dp"
+        android:text="SAVE"
+        android:textColor="#ffffff"
+        android:background="#4d536b" />
+</RelativeLayout>

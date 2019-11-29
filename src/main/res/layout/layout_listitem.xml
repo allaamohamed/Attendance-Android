@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:background="@color/Titlecolor">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TableRow>
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+
+        android:text=""
+        android:layout_toRightOf="@+id/id"/>
+
+    <TextView
+        android:id="@+id/courseid"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+
+
+        android:text=""
+
+        android:layout_toRightOf="@+id/name" />
+
+    <Button
+        android:id="@+id/editbtn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+
+        android:layout_toRightOf="@+id/courseid"
+        android:background="@mipmap/ic_ledit"
+        />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/editbtn"
+        android:background="@mipmap/ic_delete"
+       />
+    </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
